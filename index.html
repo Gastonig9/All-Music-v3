@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Anton&family=Bungee&family=Bungee+Inline&family=Lalezar&family=Mukta:wght@300&family=Secular+One&display=swap"
+        rel="stylesheet">
+    <title>All Music || Wiki de Musica</title>
+</head>
+
+<body>
+    <nav class="navbar bg-dark container navSup">
+        <div class="container">
+            <a style="margin: auto;" class="navbar-brand" href="#">
+                <img src="assets/logo.png" alt="Bootstrap">
+            </a>
+        </div>
+    </nav>
+    <div class="container d-flex">
+        <div class="containNavHeader ">
+            <nav class="navBar">
+                <div class="columnAbsolute">
+                    <div class="columnIndex">
+                        <a href="index.html">
+                            <h2>Inicio</h2>
+                        </a>
+                    </div>
+                    <div class="column">
+                        <h3 id="searchSong">Buscar<i style="margin-left: 0.3vw; font-size: 1.2vw;"
+                                class="fa-solid fa-magnifying-glass"></i></h3>
+                    </div>
+                    <hr>
+                    <div class="columnLink">
+                        <a href="popular.html" style="font-size: 1.3rem;">Mas popular</a>
+                    </div>
+                    <hr>
+                    <div class="columnLink">
+                        <a href="lyrics.html" style="font-size: 1.3rem; padding: 10px;">Lyrics</a>
+                    </div>
+                    <hr>
+                    <div class="columnIndex">
+                        <a href="votation.html">
+                            <h2 style="font-size: 1rem; padding: 10px;">¡Elige a tu favorito!</h2>
+                        </a>
+                    </div>
+                </div>
+            </nav>
+        </div>
+
+        <main>
+            <!--Forms-->
+            <form class="d-flex justify-content-center btnSearch" role="search" id="btnSearch">
+                <input class="form-control me-2" type="text" name="artist" placeholder="Buscar por Artista" id="artista"
+                    autocomplete="off" required>
+                <input class="btn btn-outline-success" type="submit">
+            </form>
+            <form class="d-flex justify-content-center btnSearchSong" role="search" id="btnSearchSong">
+                <input class="form-control me-2" type="text" name="song" placeholder="Buscar por Cancion" id="cancion"
+                    required>
+                <input class="btn btn-outline-success" type="submit">
+            </form>
+            <form class="d-flex justify-content-center btnSearch" role="search" id="btnSearch">
+                <input class="form-control me-2" type="text" name="artist" placeholder="Buscar por Artista" id="artista"
+                    required>
+                <input class="form-control me-2" type="text" name="song" placeholder="Buscar por cancion" id="cancion"
+                    required>
+                <input class="btn btn-outline-success" type="submit">
+            </form>
+            <!--Loader-->
+            <div class="loader d-flex justify-content-center">
+                <img src="assets/loader.gif" alt="Imagen de carga" id="loader">
+            </div>
+            <!--Content-->
+            <div class="error"></div>
+            <div class="defaultText" id="defaultText">
+                <h1 class="fw-bold">Bienvenido</h1>
+                <h2>Este es un sitio dedicado a que puedas realizar consultas sobre tus artistas y canciones favoritas
+                </h2>
+                <p>Haz click en "Buscar" para comenzar.</p>
+
+                <div class="containerCards d-flex justify-content-center">
+                    <div class="card" style="width: 18rem;">
+                        <img src="assets/sonLogo2.jpg" class="card-img-top" alt="...">
+                        <div class="card-body bg-secondary">
+                            <h2 class="card-text">Songs</h2>
+                        </div>
+                    </div>
+
+                    <div class="card" style="width: 18rem;">
+                        <img src="assets/artistLogo2.jpg" class="card-img-top" alt="...">
+                        <div class="card-body bg-secondary">
+                            <h2 class="card-text">Artist</h2>
+                        </div>
+                    </div>
+
+                    <div class="card" style="width: 18rem;">
+                        <img src="assets/lyricsLogo2.jpg" class="card-img-top" alt="...">
+                        <div class="card-body bg-secondary">
+                            <h2 class="card-text">Lyrics</h2>
+                        </div>
+                    </div>
+                </div>
+                <br>
+                <br>
+                <br>
+                <h2>Creado por <a
+                        href="https://gastoniglesiasdev.000webhostapp.com/">https://gastoniglesiasdev.000webhostapp.com/</a>
+                </h2>
+                <p>Redes sociales</p>
+                <div class="imgSocial">
+                    <a href="https://www.instagram.com/gastonlsk09/" target="_blank">
+                        <i style="margin: 10px; color: white;" class="fa-brands fa-instagram fs-1"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/gast%C3%B3n-iglesias-847221213/" target="_blank">
+                        <i style="margin: 10px; color: white;" class="fa-brands fa-linkedin fs-1"></i>
+                    </a>
+                    <a href="https://github.com/Gastonig9" target="_blank">
+                        <i style="margin: 10px; color: white;" class="fa-brands fa-github fs-1"></i>
+                    </a>
+                </div>
+                <div class="listSong" id="listSong"></div>
+            </div>
+            <div></div>
+            <div class="artist" id="artistContent"></div>
+            <div class="song" id="songContent"></div>
+            <hr class="border border-white border-3 opacity-75">
+            <div class="row columnSong">
+                <div class="col-6 col-md-4">Track</div>
+                <div class="col-6 col-md-4">Artista</div>
+                <div class="col-6 col-md-4">Duracion</div>
+            </div>
+            <div>
+                <table class="table table-dark table-hover" style="margin-top: 0;" id="favoriteSongsList"></table>
+            </div>
+            <div class="error"></div>
+            <div class="formAdd" id="formAdd">
+                <form>
+                    <label class="form-label" for="artistName">Nombre del artista:</label>
+                    <input  class="form-control" type="text" id="artistName" name="artistName" placeholder="Nombre del artista" required>
+
+                    <label class="form-label" for="artistInfo">Info:</label>
+                    <input  class="form-control" type="text" id="artistInfo" name="artistInfo" placeholder="Agrega una pequeña biografia para conocer mas sobre el artista" required>
+
+                    <label class="form-label" for="artistGenres">Generos:</label>
+                    <input  class="form-control" type="text" id="artistGenres" name="artistGenres" placeholder="Genero del artista" required>
+                    
+                    <label class="form-label" for="artistCountry">Pais:</label>
+                    <input  class="form-control" type="text" id="artistCountry" name="artistCountry" placeholder="Pais del artista" required>
+
+                    <label class="form-label" for="artistDate">Fecha de nacimiento:</label>
+                    <input  class="form-control" type="text" id="artistDate" name="artistDate" placeholder="por ejemplo: 1 de marzo de 1994 (edad 29 años)">
+
+                    <label class="form-label" for="artistPicture">Imagen de perfil:</label>
+                    <input  class="form-control" type="text" id="artistPicture" name="artistPicture" placeholder="Inserta una url para una imagen de perfil del artista (opcional)" required>
+
+                    <!-- Agregar los demás campos del formulario -->
+
+                    <button class="my-button" type="submit">Agregar artista</button>
+                </form>
+            </div>
+        </main>
+    </div>
+
+    <!--SCRIPTS-->
+    <script src="js/main.js" type="module"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

@@ -1,0 +1,347 @@
+body {
+    background-color: black;
+    font-family: 'Mukta', sans-serif;
+}
+
+/*LOGO*/
+.navSup {
+    width: 50%;
+    background-color: rgb(0, 0, 0) !important;
+}
+
+
+.navSup img {
+    width: 19vw;
+}
+
+/*NAVBAR*/
+.containNavHeader {
+    width: 35vw;
+    height: 500px;
+    border: 2px solid black;
+    background-color: rgb(0, 0, 0);
+}
+
+.containNavHeader h3,
+h2 {
+    font-size: 1.5vw;
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+    transition: all 1s ease;
+    padding: 5px;
+}
+
+
+
+.containNavHeader h3:hover {
+    background-color: white;
+    color: black;
+    font-size: 1.6vw;
+    border-radius: 30px;
+
+}
+
+.containNavHeader .columnIndex h2:hover {
+    background-color: white;
+    color: black;
+    font-size: 1.6vw;
+    border-radius: 30px;
+    padding: 5px;
+}
+
+.containNavHeader a {
+    font-size: 1.5vw !important;
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+    transition: all 1s ease;
+    padding: 5px;
+}
+
+.containNavHeader .columnLink a:hover {
+    background-color: white;
+    margin-bottom: 15px;
+    color: black;
+    font-size: 1.6vw;
+    border-radius: 20px;
+    padding: 5px;
+}
+
+.btnSearch {
+    visibility: hidden;
+}
+
+.btnSearchSong {
+    visibility: hidden;
+    margin: auto;
+    margin-top: 10px;
+}
+
+/*MAIN*/
+
+
+
+main {
+    width: 100%;
+    margin-top: 10px;
+}
+
+main .loader {
+    width: 100%;
+
+}
+
+main .loader img {
+    width: 6vw;
+    display: none;
+}
+
+.btnSearch {
+    width: 20vw;
+    margin: auto;
+}
+
+
+.defaultText {
+    width: 60vw;
+    margin: auto;
+    margin-top: 10px;
+    text-align: center;
+    padding: 10px;
+}
+
+.defaultText h1 {
+    font-size: 5.5vw;
+    margin-bottom: 20px;
+    background-color: rgb(22, 21, 21);
+    color: white;
+    box-shadow: 5px 5px 5px 1px rgb(60, 104, 72);
+}
+
+.defaultText h2,
+p {
+    background-color: rgb(22, 21, 21);
+    padding: 5px;
+    color: white;
+    box-shadow: 5px 5px 5px 1px rgb(60, 104, 72);
+    margin-bottom: 20px;
+}
+
+.infoArtist img {
+    width: 30vw;
+    height: 30vh;
+    border-left: 2px solid #deea16;
+    border-bottom: 2px solid #deea16;
+    border-top: 2px solid #deea16;
+    border-radius: 20px;
+}
+
+.spotifyLink {
+    width: 50%;
+    height: 33vh;
+    padding: 10px;
+    margin-left: 5vw;
+    text-align: center;
+    text-decoration: none;
+    background-image: url("https://i.ibb.co/MCmyk7H/spotify.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.spotifyLink a {
+    text-decoration: none;
+    font-family: 'Lalezar', cursive;
+}
+
+.spotifyLink a h3:hover {
+    background-color: #212529 !important;
+    transition: 1s ease;
+}
+
+.spotifyLink i {
+    font-size: 50px;
+    color: #70ae6e;
+    margin-top: 10px;
+}
+
+.artistContent .tableFans {
+    width: 70%;
+    margin: auto;
+}
+
+.formAdd {
+    display: none;
+}
+
+.formAdd label {
+    color: white;
+    display: block;
+    font-size: 1.2em;
+    margin-bottom: 0.5em;
+}
+
+.my-button {
+    width: 100%;
+    margin: auto;
+    padding: 12px 24px;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #fff;
+    background-color: #4CAF50;
+    border-radius: 50px;
+    border: none;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+    transition: all 0.3s ease;
+    margin-top: 10px;
+}
+
+.my-button:hover {
+    background-color: #3e8e41;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.5);
+    transform: translateY(-2px);
+}
+
+.my-button:active {
+    background-color: #367d39;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+    transform: translateY(2px);
+}
+
+/*SONG*/
+
+.intro h1 {
+    width: 80%;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    margin: auto;
+}
+
+.contentCard .card {
+    margin: 5px;
+    color: black;
+}
+
+.contentLink {
+    width: 100%;
+    margin: auto;
+    background-color: #70ae6e;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+
+.contentLink a {
+    text-decoration: none;
+    color: white;
+    transition: 1s all ease;
+
+
+}
+
+.contentLink a:hover {
+    background-color: white;
+    color: black;
+    border-radius: 30px;
+    padding: 10px;
+}
+
+.imgSocial {
+    margin-top: 10px;
+
+}
+
+
+.contentSong {
+    margin: 20px;
+}
+
+.intro {
+    margin-bottom: 10px;
+}
+
+h1.card {
+    font-size: 36px;
+}
+
+h2.card {
+    font-size: 28px;
+}
+
+img.shadow-lg {
+    max-width: 100%;
+    height: auto;
+}
+
+.contentImage {
+    margin-bottom: 20px;
+
+}
+
+.contentCard {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.contentCard .card {
+    flex: 1;
+    margin: 10px;
+    padding: 10px;
+}
+
+.like {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.iconLike {
+    font-size: 48px;
+    margin-bottom: 10px;
+}
+
+.alertSong {
+    margin-bottom: 10px;
+    display: none;
+}
+
+.alertSongDelete {
+    display: none;
+}
+
+.contentLink {
+    margin-bottom: 20px;
+}
+
+a {
+    color: #ffffff;
+}
+
+h1.bg-dark {
+    padding: 10px;
+    font-size: 32px;
+}
+
+
+.song .like {
+    width: 20vw;
+    margin: auto;
+    color: white;
+    text-align: center;
+    font-size: 5vw;
+}
+
+.columnSong {
+    width: 97%;
+    text-align: justify;
+    font-weight: bold;
+    font-size: 16px;
+    color: white;
+    padding: 10px;
+}
